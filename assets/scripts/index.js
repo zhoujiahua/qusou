@@ -1314,10 +1314,10 @@ var comm_list = [{
                 i.src = "https://images.google.com/favicon.ico?" + Date.now(), i.onload = function () {
                     o(".search-form").attr("action", "https://www.google.com/search"), o(".search-form").prepend('<input class="search-hidden" type="hidden" name="tbm" value="isch">')
                 }
-            } else if (o(t).hasClass("lookao")) {
-                o(".search-form").attr("action", "https://lookao.com/search"), o(".search-keyword").attr({
-                    name: "q",
-                    placeholder: "Lookao 搜索"
+            } else if (o(t).hasClass("map")) {
+                o(".search-form").attr("action", "https://ditu.amap.com/search"), o(".search-keyword").attr({
+                    name: "query",
+                    placeholder: "高德地图搜索"
                 })
             } else if (o(t).hasClass("torrent")) o(".search-form").attr("action", "https://torrentz2.eu/search"), o(".search-keyword").attr({
                 name: "f",
